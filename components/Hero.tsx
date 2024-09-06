@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import MagicButton from "./ui/MagicButton";
 
 const Hero = () => {
@@ -38,10 +39,10 @@ const Hero = () => {
             </a>
           </div>
           <div className="flex items-center justify-center h-50 w-50">
-            <img
+            <Image
               src="./Piicture.png"
               loading="lazy"
-              alt="hero_img"
+              alt="hero_image"
               className="w-full custom-gradient-border max-w-[300px] md:max-w-[400px] object-cover object-center pointer-events-none"
             />
           </div>

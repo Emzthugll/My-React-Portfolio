@@ -51,12 +51,12 @@ const Contact: React.FC = () => {
         >
           <div>
             <h2 className="text-black-100 dark:text-white text-3xl font-extrabold mb-4">
-              Let's Talk
+              Let&#39;s Talk
             </h2>
             <p className="text-sm dark:text-white mb-6">
-              I'd love to hear from you! Whether you need help with development,
-              design, or just want to brainstorm, feel free to reach out. Let’s
-              turn your vision into reality together!
+              I&#39;d love to hear from you&apos; Whether you need help with
+              development, design, or just want to brainstorm, feel free to
+              reach out. Let&#39;s turn your vision into reality together&apos;
             </p>
           </div>
 
