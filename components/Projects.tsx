@@ -7,8 +7,8 @@ import Fourth from "./assets/Proj4.png";
 import Fifth from "./assets/Proj5.png";
 import {
   PeakVoyageIcons,
-  EcommerceIcons,
-  WeatherAppIcons,
+  FirstPortfolioIcons,
+  SurveyFormIcons,
   COEIcons,
   PortfolioIcons,
 } from "./ui/SvgIcons";
@@ -27,31 +27,31 @@ const projects = [
   {
     title: "My Updated Portfolio",
     description:
-      "This landing page is my first major front-end project created with React. It taught me how to build reusable components and dynamically display content. By using various React tools, I developed a clean and functional travel agency website, showcasing my new skills and creating an engaging user experience.",
+      "My portfolio showcases a range of projects that highlight my skills in crafting intuitive, responsive websites and applications. Each project demonstrates my commitment to quality, attention to detail, and creativity. Feel free to explore and see how I bring concepts to life with cutting-edge technologies and thoughtful design.",
     imageUrl: Fifth,
-    link: "https://peakvoyage.netlify.app",
+    link: "https://main--mj-react-portfolio.netlify.app/",
     icons: <PortfolioIcons />, // Unique icons for this project
   },
   {
     title: "My First Portfolio",
     description:
-      "An online store for gym equipment with a modern UI/UX design that provides an excellent shopping experience.",
+      "My portfolio showcases a range of projects that highlight my skills in crafting intuitive, responsive websites and applications. Each project demonstrates my commitment to quality, attention to detail, and creativity. Feel free to explore and see how I bring concepts to life with cutting-edge technologies and thoughtful design.",
     imageUrl: Second,
     link: "https://emzthugll.github.io/FCC-Portfolio/",
-    icons: <EcommerceIcons />, // Unique icons for this project
+    icons: <FirstPortfolioIcons />, // Unique icons for this project
   },
   {
     title: "Survey Form",
     description:
-      "A weather forecasting app using React and OpenWeather API, providing accurate and real-time weather updates.",
+      "This survey form is designed to gather valuable feedback from users in a streamlined and efficient manner. Created using basic HTML and CSS. It offers a clean and user-friendly interface for respondents.",
     imageUrl: Third,
     link: "https://emzthugll.github.io/Survey-Form/",
-    icons: <WeatherAppIcons />, // Unique icons for this project
+    icons: <SurveyFormIcons />, // Unique icons for this project
   },
   {
     title: "COE Landing Page",
     description:
-      "A weather forecasting app using React and OpenWeather API, providing accurate and real-time weather updates.",
+      " This site provides a clear and engaging introduction to our engineering programs, faculty, and research opportunities. Built using only HTML, CSS, and JavaScript, it features a straightforward and user-friendly design.",
     imageUrl: Fourth,
     link: "https://emzthugll.github.io/COE-Website/",
     icons: <COEIcons />, // Unique icons for this project

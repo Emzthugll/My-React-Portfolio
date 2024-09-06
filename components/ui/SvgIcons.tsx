@@ -57,7 +57,7 @@ export const PeakVoyageIcons = () => (
   </>
 );
 
-export const EcommerceIcons = () => (
+export const FirstPortfolioIcons = () => (
   <>
     <svg
       className="ml-3"
@@ -116,7 +116,7 @@ export const EcommerceIcons = () => (
   </>
 );
 
-export const WeatherAppIcons = () => (
+export const SurveyFormIcons = () => (
   <>
     <svg
       className="ml-3"
