@@ -33,10 +33,10 @@ const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({
           {/* Your Privacy Policy content here */}
           <p>
             This Privacy Policy outlines how we collect, use, and protect your
-            information when you interact with Alan Bacay's portfolio website.
-            We are committed to safeguarding your privacy and ensuring the
-            security of any personal information you provide while using this
-            website.
+            information when you interact with Mj Gacula&#39;s portfolio
+            website. We are committed to safeguarding your privacy and ensuring
+            the security of any personal information you provide while using
+            this website.
           </p>
           <h3 className="text-2xl font-bold mt-5 mb-3">
             Information we collect
