@@ -50,9 +50,9 @@ const Contact: React.FC = () => {
           style={{ boxShadow: " 0 4px 6px rgb(0,0,255,0.6)" }}
         >
           <div>
-            <h2 className="text-black-100 dark:text-white text-3xl font-extrabold mb-4">
+            <h1 className="text-black-100 dark:text-white text-3xl font-extrabold mb-4">
               Let&#39;s Talk
-            </h2>
+            </h1>
             <p className="text-sm dark:text-white mb-6">
               I&#39;d love to hear from you&apos; Whether you need help with
               development, design, or just want to brainstorm, feel free to
@@ -66,36 +66,44 @@ const Contact: React.FC = () => {
               name="apikey"
               value="e4fa95c8-325f-4ca4-bc31-92aaa14fea37"
             />
-            <div className="flex flex-col sm:flex-row gap-4 ">
+            <div className="flex flex-col sm:flex-row gap-3 ">
+              <div className=" rounded-lg transition-all duration-500 hover:shadow-[0_0_5px_#A020F0,0_0_10px_#4B0082]  dark:hover:shadow-[0_0_10px_#A020F0,0_0_10px_#4B0082]">
+                <input
+                  type="text"
+                  name="first_name"
+                  className=" border dark:bg-gray-700 rounded-lg px-4 py-2    w-full max-w-5xl"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div className=" rounded-lg transition-all duration-500 hover:shadow-[0_0_5px_#A020F0,0_0_10px_#4B0082]  dark:hover:shadow-[0_0_10px_#A020F0,0_0_10px_#4B0082]">
+                <input
+                  type="text"
+                  name="last_name"
+                  className="border dark:bg-gray-700 rounded-lg px-4 py-2    w-full max-w-5xl"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </div>
+            <div className="rounded-lg transition-all duration-500 hover:shadow-[0_0_5px_#A020F0,0_0_10px_#4B0082]  dark:hover:shadow-[0_0_10px_#A020F0,0_0_10px_#4B0082]">
               <input
-                type="text"
-                name="first_name"
-                className="border dark:bg-gray-700  rounded-md px-4 py-2    w-full max-w-5xl"
-                placeholder="First Name"
-                required
-              />
-              <input
-                type="text"
-                name="last_name"
-                className="border dark:bg-gray-700  rounded-md px-4 py-2 w-full  max-w-5xl"
-                placeholder="Last Name"
+                type="email"
+                name="email"
+                className=" border dark:bg-gray-700  rounded-lg px-4 py-2 w-full max-w-5x"
+                placeholder="Your Email Address"
                 required
               />
             </div>
-            <input
-              type="email"
-              name="email"
-              className="border dark:bg-gray-700  rounded-md px-4 py-2 w-full max-w-5x"
-              placeholder="Your Email Address"
-              required
-            />
+
             <textarea
               name="message"
               rows={4}
-              className="border dark:bg-gray-700  rounded-md px-4 py-2 mt-2 w-full max-w-5xl"
+              className="border dark:bg-gray-700  rounded-lg px-4 py-2 mt-2 w-full max-w-5xl"
               placeholder="Your Message"
               required
             ></textarea>
+
             <div className="flex items-center mt-4">
               <input
                 type="checkbox"

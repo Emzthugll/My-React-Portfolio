@@ -5,6 +5,7 @@ import Second from "./assets/Proj2.png";
 import Third from "./assets/Third.png";
 import Fourth from "./assets/Proj4.png";
 import Fifth from "./assets/Proj5.png";
+import Sixth from "./assets/Proj6.png";
 import {
   PeakVoyageIcons,
   FirstPortfolioIcons,
@@ -22,6 +23,14 @@ const projects = [
       "This landing page is my first major front-end project created with React. It taught me how to build reusable components and dynamically display content. By using various React tools, I developed a clean and functional travel agency website, showcasing my new skills and creating an engaging user experience.",
     imageUrl: First,
     link: "https://peakvoyage.netlify.app",
+    icons: <PeakVoyageIcons />, // Unique icons for this project
+  },
+  {
+    title: "Orion Landing Page",
+    description:
+      "The Orion Cloud landing page, built with React, Tailwind, and Framer Motion, offers a sleek, responsive design with smooth animations. It highlights cloud services with modern visuals, ensuring a fluid and engaging user experience.",
+    imageUrl: Sixth,
+    link: "https://emzthugll.github.io/Orion-Landing-Page/",
     icons: <PeakVoyageIcons />, // Unique icons for this project
   },
   {
@@ -83,10 +92,9 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row items-center mb-8 p-4 bg-transparent  rounded-lg  w-full max-w-5xl border bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
-              style={{ boxShadow: " 0 4px 6px rgb(0,0,255,0.6)" }}
+              className="flex flex-col md:flex-row items-center mb-8 p-4 bg-transparent rounded-lg w-full max-w-5xl border bg-gradient-to-r from-purple-100 to-indigo-100 dark:text-white transition-all duration-500 hover:shadow-[0_0_20px_#A020F0,0_0_30px_#4B0082] cursor-pointer"
             >
-              <div className="w-full md:w-1/2 mb-4 md:mb-0 overflow-hidden  ">
+              <div className="w-full md:w-1/2 mb-4 md:mb-0 overflow-hidden">
                 <Image
                   src={project.imageUrl}
                   alt={project.title}

@@ -28,7 +28,7 @@ const About = () => {
             </h1>
           </div>
           <div className="grid md:grid-cols-3   md:gap-10  justify-center items-start">
-            <div className="md:col-span-2 paragraph mb-10">
+            <div className="md:col-span-2 paragraph mb-10 text-lg">
               <p className="mb-3 opacity: 1; transform: none;">
                 I am <span className="font-bold">MJ</span>, a Computer
                 Engineering graduate from Mariano Marcos State University with a
@@ -58,8 +58,11 @@ const About = () => {
                 enthusiasm. Let’s connect and discuss how we can work together!
               </p>
             </div>
-            <div className="sm:min-w-[250px]  flex flex-col p-3">
-              <div className="flex flex-row items-start mb-1 ml-1">
+            <div
+              className="sm:min-w-[250px]  flex flex-col p-3 border rounded-lg bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
+              style={{ boxShadow: "0 4px 6px rgb(75, 0, 130)" }}
+            >
+              <div className="flex flex-row items-start mb-1 ml-1 ">
                 <h3 className="font-bold">What I use</h3>
               </div>
               <div className="flex flex-wrap text-sm">
