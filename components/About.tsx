@@ -58,39 +58,36 @@ const About = () => {
                 enthusiasm. Let’s connect and discuss how we can work together!
               </p>
             </div>
-            <div
-              className="sm:min-w-[250px]  flex flex-col p-3 border rounded-lg bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
-              style={{ boxShadow: "0 4px 6px rgb(75, 0, 130)" }}
-            >
+            <div className="sm:min-w-[250px]  flex flex-col p-3   ">
               <div className="flex flex-row items-start mb-1 ml-1 ">
-                <h3 className="font-bold">What I use</h3>
+                <h3 className="font-bold text-lg">What I use</h3>
               </div>
               <div className="flex flex-wrap text-sm">
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-orange-400">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium   rounded-2xl bg-orange-400">
                   <Image className="w-4 mr-1 " src={HTML} alt="" />
                   Html
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-blue-500">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-blue-500">
                   <Image className="w-4 mr-1 " src={CSS} alt="" />
                   CSS
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-yellow-300">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium   rounded-2xl bg-yellow-300">
                   <Image className="w-4 mr-1 " src={JAVASCRIPT} alt="" />
                   JavaScript
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-sky-500">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium   rounded-2xl bg-sky-500">
                   <Image className="w-4 mr-1 " src={REACT} alt="" />
                   React
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-green-600">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-green-600">
                   <Image className="w-4 mr-1 " src={NODE} alt="" />
                   Node.js
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-sky-800">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-sky-800">
                   <Image className="w-4 mr-1 " src={TAILWIND} alt="" />
                   TailwindCSS
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl  bg-black text-white dark:bg-white dark:text-black ">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium rounded-2xl  bg-black text-white dark:bg-white dark:text-black ">
                   <svg
                     className="mr-1"
                     fill="currentColor"
@@ -103,7 +100,7 @@ const About = () => {
                   </svg>
                   Next.js
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-green-200">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium rounded-2xl bg-green-200">
                   <svg
                     className="mr-1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -142,11 +139,11 @@ const About = () => {
                   </svg>
                   Canva
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-red-300">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-red-300">
                   <Image className="w-3 mr-2 " src={FIGMA} alt="" />
                   Figma
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-blue-400">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-blue-400">
                   <svg
                     className="mr-2"
                     width="18"
@@ -209,7 +206,7 @@ const About = () => {
                   </svg>
                   VS Code
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-blue-700">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-blue-700">
                   <svg
                     className="mr-2"
                     fill="none"
@@ -235,7 +232,7 @@ const About = () => {
                   </svg>
                   Framer Motion
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-violet-500">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-violet-500">
                   <svg
                     className="mr-2"
                     height="18"
@@ -255,7 +252,7 @@ const About = () => {
                   </svg>
                   Bootstrap
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-orange-400">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-orange-400">
                   <svg
                     className="mr-2"
                     height="18"
@@ -271,7 +268,7 @@ const About = () => {
                   </svg>
                   Git
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-black text-white dark:bg-white dark:text-black ">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-black text-white dark:bg-white dark:text-black ">
                   <svg
                     className="mr-1"
                     fill="currentColor"
@@ -284,7 +281,7 @@ const About = () => {
                   </svg>
                   GitHub
                 </p>
-                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-green-700  ">
+                <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-green-700  ">
                   <Image className="w-4 mr-2  " src={MONGO} alt="" />
                   MongoDB
                 </p>
@@ -292,10 +289,10 @@ const About = () => {
 
               <div className="relative w-fit h-fit overflow-y-clip">
                 <div className="flex flex-row items-start mb-2 ml-1">
-                  <h3 className="font-bold">What I have learned</h3>
+                  <h3 className="font-bold text-lg">What I have learned</h3>
                 </div>
                 <div className="flex flex-wrap text-sm">
-                  <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-orange-200  ">
+                  <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-orange-200  ">
                     <svg
                       className="mr-1 justify-center"
                       height="20"
@@ -315,7 +312,7 @@ const About = () => {
                     </svg>
                     AWS
                   </p>
-                  <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-blue-200">
+                  <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-blue-200">
                     <svg
                       className="mr-1 justify-center"
                       height="18"
@@ -352,15 +349,15 @@ const About = () => {
                     </svg>
                     Java
                   </p>
-                  <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-blue-400  ">
+                  <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-blue-400  ">
                     <Image className="w-4 mr-2  " src={PYTHON} alt="" />
                     Python
                   </p>
-                  <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-orange-700  ">
+                  <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-orange-700  ">
                     <Image className="w-4 mr-2  " src={MATLAB} alt="" />
                     MATLAB
                   </p>
-                  <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium border border-white-200 rounded-2xl bg-indigo-400  ">
+                  <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-indigo-400  ">
                     <Image className="w-4 mr-2  " src={C} alt="" />
                     CSharp
                   </p>
