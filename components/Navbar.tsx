@@ -16,6 +16,10 @@ const Navbar = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
+
   useEffect(() => {
     if (isNavOpen) {
       document.body.classList.add(
@@ -47,6 +51,7 @@ const Navbar = () => {
         <a
           href="#home"
           className="flex items-center space-x-3 rtl:space-x-reverse"
+          onClick={closeNav} // Close menu when logo is clicked
         >
           <span className="self-center hidden sm-custom:flex text-2xl font-semibold whitespace-nowrap">
             M <span className="text-blue-600 font-bold">J</span>
@@ -162,6 +167,7 @@ const Navbar = () => {
             <a
               href="#hero"
               className="block py-2 px-3 rounded hover:bg-blue-500"
+              onClick={closeNav} // Close menu and navigate when "Home" is clicked
             >
               Home
             </a>
@@ -170,6 +176,7 @@ const Navbar = () => {
             <a
               href="#about"
               className="block py-2 px-3 rounded hover:bg-blue-500"
+              onClick={closeNav} // Close menu and navigate when "About" is clicked
             >
               About
             </a>
@@ -178,6 +185,7 @@ const Navbar = () => {
             <a
               href="#projects"
               className="block py-2 px-3 rounded hover:bg-blue-500"
+              onClick={closeNav} // Close menu and navigate when "Projects" is clicked
             >
               Projects
             </a>
@@ -186,6 +194,7 @@ const Navbar = () => {
             <a
               href="#contact"
               className="block py-2 px-3 rounded hover:bg-blue-500"
+              onClick={closeNav} // Close menu and navigate when "Contact" is clicked
             >
               Contact
             </a>

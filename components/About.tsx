@@ -21,7 +21,7 @@ const About = () => {
         <div className="w-full  max-w-[1200px] mx-auto px-4 text-text dark:text-darkText z-50">
           <div className="flex flex-col items-center justify-center w-full mb-10 ">
             <h1
-              className=" text-3xl lg:text-4xl font-bold md:mt-20 rounded-full px-4 py-2 inline-block bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
+              className=" text-3xl lg:text-4xl font-bold mt-20 md:mt-20 rounded-full px-4 py-2 inline-block bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
               style={{ boxShadow: "0 4px 6px rgb(75, 0, 130)" }}
             >
               About Me

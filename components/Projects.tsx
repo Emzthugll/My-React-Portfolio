@@ -78,7 +78,7 @@ const Projects = () => {
       <div className="container mx-auto py-10  z-50">
         <div className="text-center mt-5">
           <h1
-            className="text-3xl lg:text-4xl font-bold  mb-4 rounded-full px-4 py-2 inline-block bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
+            className="text-3xl lg:text-4xl font-bold mt-5  mb-4 rounded-full px-4 py-2 inline-block bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
             style={{ boxShadow: "0 4px 6px rgb(75, 0, 130)" }}
           >
             Projects
