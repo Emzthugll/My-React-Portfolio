@@ -40,7 +40,9 @@ const Hero = () => {
           </div>
           <div className="flex items-center justify-center h-50 w-50">
             <Image
-              src="./Piicture.png"
+              width={300}
+              height={300}
+              src="/Piicture.png"
               loading="lazy"
               alt="hero_image"
               className="w-full custom-gradient-border max-w-[300px] md:max-w-[400px] object-cover object-center pointer-events-none"
