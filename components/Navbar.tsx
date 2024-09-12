@@ -64,7 +64,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#hero"
-                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:border-blue-600"
+                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600"
               >
                 Home
               </a>
