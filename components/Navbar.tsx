@@ -11,6 +11,8 @@ import { ModeToggle } from "./modeToggle";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -19,6 +21,30 @@ const Navbar = () => {
   const closeNav = () => {
     setIsNavOpen(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      if (scrollY > 50) {
+        // Threshold to trigger hiding of navbar
+        if (scrollY > lastScrollY) {
+          // Scrolling down
+          setIsNavbarVisible(false);
+        } else {
+          // Scrolling up
+          setIsNavbarVisible(true);
+        }
+      } else {
+        // At the top of the page
+        setIsNavbarVisible(true);
+      }
+      setLastScrollY(scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   useEffect(() => {
     if (isNavOpen) {
@@ -45,15 +71,19 @@ const Navbar = () => {
   }, [isNavOpen]);
 
   return (
-    <nav className="fixed top-0 left-0  w-full bg-white bg-opacity-50 backdrop-filter backdrop-blur-lg dark:bg-gray-900 dark:bg-opacity-10 z-20 ">
+    <nav
+      className={`fixed top-0 left-0 w-full bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg dark:bg-black dark:bg-opacity-70 z-20 transition-transform duration-300 ${
+        isNavbarVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-3 overflow-hidden">
         {/* Logo and Name */}
         <a
           href="#home"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-          onClick={closeNav} // Close menu when logo is clicked
+          className="flex items-center space-x-3 rtl:space-x-reverse ml-4"
+          onClick={closeNav}
         >
-          <span className="self-center hidden sm-custom:flex text-2xl font-semibold whitespace-nowrap">
+          <span className="text-2xl   font-semibold whitespace-nowrap ">
             M <span className="text-blue-600 font-bold">J</span>
           </span>
         </a>
@@ -99,14 +129,19 @@ const Navbar = () => {
         {/* Toggle Button and Icons */}
         <div className="flex items-center space-x-4">
           {/* LinkedIn and GitHub Icons */}
-          <div className="hidden sm-custom:flex space-x-4 ">
+          <div className="hidden md:flex space-x-4">
             <a
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/in/marc-jairus-gacula-76b511262/"
             >
-              <FaLinkedin className="h-6 w-5 " />
+              <FaLinkedin className="h-6 w-5" />
             </a>
-            <a target="blank" href="">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/your-profile"
+            >
               <FaGithub className="h-6 w-5" />
             </a>
           </div>
@@ -162,12 +197,12 @@ const Navbar = () => {
             <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
           </svg>
         </button>
-        <ul className="font-medium h-full flex flex-col p-4  mt-10 rounded-lg">
+        <ul className="font-medium h-full flex flex-col p-4 mt-10 rounded-lg">
           <li>
             <a
               href="#hero"
               className="block py-2 px-3 rounded hover:bg-blue-500"
-              onClick={closeNav} // Close menu and navigate when "Home" is clicked
+              onClick={closeNav}
             >
               Home
             </a>
@@ -176,7 +211,7 @@ const Navbar = () => {
             <a
               href="#about"
               className="block py-2 px-3 rounded hover:bg-blue-500"
-              onClick={closeNav} // Close menu and navigate when "About" is clicked
+              onClick={closeNav}
             >
               About
             </a>
@@ -185,7 +220,7 @@ const Navbar = () => {
             <a
               href="#projects"
               className="block py-2 px-3 rounded hover:bg-blue-500"
-              onClick={closeNav} // Close menu and navigate when "Projects" is clicked
+              onClick={closeNav}
             >
               Projects
             </a>
@@ -194,26 +229,39 @@ const Navbar = () => {
             <a
               href="#contact"
               className="block py-2 px-3 rounded hover:bg-blue-500"
-              onClick={closeNav} // Close menu and navigate when "Contact" is clicked
+              onClick={closeNav}
             >
               Contact
             </a>
           </li>
           <div className="flex border-t border-gray-200 dark:border-gray-700 mt-4">
-            <div className="flex  mt-4 mx-3 gap-3 ">
-              <a target="blank" href="https://www.facebook.com/Emzthug/">
+            <div className="flex mt-4 mx-3 gap-3">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/Emzthug/"
+              >
                 <FaFacebookSquare className="h-6 w-5" />
               </a>
-              <a target="blank" href="https://www.instagram.com/emzthugll/">
-                <FaInstagram className="h-6 w-5 " />
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/emzthugll/"
+              >
+                <FaInstagram className="h-6 w-5" />
               </a>
               <a
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/marc-jairus-gacula-76b511262/"
               >
-                <FaLinkedin className="h-6 w-5 " />
+                <FaLinkedin className="h-6 w-5" />
               </a>
-              <a target="blank" href="">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/your-profile"
+              >
                 <FaGithub className="h-6 w-5" />
               </a>
             </div>
