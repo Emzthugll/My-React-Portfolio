@@ -19,7 +19,7 @@ const Hero = () => {
 
         {/* Top Centered Image */}
         <div className="flex items-center justify-center w-full z-10">
-          <div className="h-48 w-48 md:h-64 md:w-64 lg:h-74 lg:w-74  rounded-full overflow-hidden mb-4">
+          <div className="h-48 w-48 md:h-64 md:w-64 lg:h-70 lg:w-70  rounded-full overflow-hidden mb-4">
             <Image
               width={500}
               height={500}
