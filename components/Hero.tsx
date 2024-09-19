@@ -1,9 +1,17 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import MagicButton from "./ui/MagicButton";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
+
   const resumeUrl =
     "https://storage.googleapis.com/resume-hosting/66daa681019f4.pdf"; // Define your resume URL
 
@@ -18,23 +26,31 @@ const Hero = () => {
         <div className="absolute inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none"></div>
 
         {/* Top Centered Image */}
-        <div className="flex items-center justify-center w-full z-10">
-          <div className="h-48 w-48 md:h-64 md:w-64 lg:h-70 lg:w-70  rounded-full overflow-hidden mb-4">
+        <div className="flex items-center justify-center w-full ">
+          <div
+            className="h-48 w-48 md:h-64 md:w-64 lg:h-70 lg:w-70 rounded-full  mb-4"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <Image
               width={500}
               height={500}
               src="/Pic.png"
               loading="lazy"
-              alt="hero_image"
+              alt="Hero Image"
               className="w-full h-full object-cover bg-blue-300 rounded-full"
             />
           </div>
         </div>
 
         {/* Text Section Below Image */}
-        <div className="text-center max-w-4xl mx-auto z-10 px-4">
+        <div
+          className="text-center max-w-4xl mx-auto z-10 px-4"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-widest font-semibold leading-tight">
-            <span className="">Hello there, I&apos;m MJ</span>
+            Hello there, I&apos;m MJ
           </h1>
           <h2 className="text-sm sm:text-base md:text-lg lg:text-xl tracking-tight font-mono font-semibold mt-2 mb-4">
             Full Stack Web Developer

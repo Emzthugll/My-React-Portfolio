@@ -19,7 +19,10 @@ const About = () => {
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="w-full  max-w-[1200px] mx-auto px-4 text-text dark:text-darkText z-50">
-          <div className="flex flex-col items-center justify-center w-full mb-10 ">
+          <div
+            className="flex flex-col items-center justify-center w-full mb-10 "
+            data-aos="zoom-in"
+          >
             <h1
               className=" text-3xl lg:text-4xl font-bold mt-20 md:mt-20 rounded-full px-4 py-2 inline-block bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
               style={{ boxShadow: "0 4px 6px rgb(75, 0, 130)" }}
@@ -28,7 +31,10 @@ const About = () => {
             </h1>
           </div>
           <div className="grid md:grid-cols-3   md:gap-10  justify-center items-start">
-            <div className="md:col-span-2 paragraph mb-10 text-lg">
+            <div
+              className="md:col-span-2 paragraph mb-10 text-lg"
+              data-aos="fade-right"
+            >
               <p className="mb-3 opacity: 1; transform: none;">
                 I am <span className="font-bold">MJ</span>, a Computer
                 Engineering graduate from Mariano Marcos State University with a
@@ -58,7 +64,10 @@ const About = () => {
                 enthusiasm. Let’s connect and discuss how we can work together!
               </p>
             </div>
-            <div className="sm:min-w-[250px]  flex flex-col p-3   ">
+            <div
+              className="sm:min-w-[250px]  flex flex-col p-3   "
+              data-aos="fade-left"
+            >
               <div className="flex flex-row items-start mb-1 ml-1 ">
                 <h3 className="font-bold text-lg">What I use</h3>
               </div>

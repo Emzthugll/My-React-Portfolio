@@ -76,7 +76,10 @@ const Navbar = () => {
         isNavbarVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-3 overflow-hidden">
+      <div
+        className="max-w-screen-xl flex items-center justify-between mx-auto p-3 overflow-hidden"
+        data-aos="zoom-in"
+      >
         {/* Logo and Name */}
         <a
           href="#home"
@@ -94,7 +97,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#hero"
-                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600"
+                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600 hover:text-white dark:hover:text-black"
               >
                 Home
               </a>
@@ -102,7 +105,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#about"
-                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600"
+                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600 hover:text-white dark:hover:text-black"
               >
                 About
               </a>
@@ -110,7 +113,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#projects"
-                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600"
+                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600 hover:text-white dark:hover:text-black"
               >
                 Projects
               </a>
@@ -118,7 +121,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600"
+                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600 hover:text-white dark:hover:text-black"
               >
                 Contact
               </a>

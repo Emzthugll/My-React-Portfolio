@@ -37,7 +37,10 @@ const Contact: React.FC = () => {
         id="contact"
         className="min-h-screen py-8 sm:py-16 px-4 sm:px-8 z-10"
       >
-        <div className="flex flex-col items-center justify-center w-full mb-10">
+        <div
+          className="flex flex-col items-center justify-center w-full mb-10"
+          data-aos="zoom-in"
+        >
           <h1
             className="text-3xl lg:text-4xl  text-black font-bold mt-9 md:mt-5 md:mb-6 sm:text-5xl rounded-full px-4 py-2 inline-block bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
             style={{ boxShadow: "0 4px 6px rgb(75, 0, 130)" }}
@@ -48,6 +51,7 @@ const Contact: React.FC = () => {
         <div
           className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-14 rounded-lg p-6 sm:p-8 mx-auto max-w-6xl font-[sans-serif] w-full border border-gray-200 dark:border-gray-500  bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
           style={{ boxShadow: " 0 4px 6px rgb(0,0,255,0.6)" }}
+          data-aos="zoom-in-up"
         >
           <div>
             <h1 className="text-black-100 dark:text-white text-3xl font-extrabold mb-4">
