@@ -78,6 +78,7 @@ const Navbar = () => {
       <div
         className="max-w-screen-xl flex items-center justify-between mx-auto p-3 overflow-hidden z-40"
         data-aos="zoom-in"
+        data-aos-duration="1000"
       >
         {/* Logo and Name */}
         <a

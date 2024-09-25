@@ -1,31 +1,7 @@
+// app/layout.tsx
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import localfont from "next/font/local";
 import "./globals.css";
-
 import StarsCanvas from "@/components/StarBackground";
-
-const inter = Inter({ subsets: ["latin"] });
-
-const PopBold = localfont({
-  src: [
-    {
-      path: "../public/fonts/PopBold.ttf",
-      weight: "700",
-    },
-  ],
-  variable: "--font-PopBold",
-});
-
-const PopReg = localfont({
-  src: [
-    {
-      path: "../public/fonts/PopReg.ttf",
-      weight: "100, 400, 700",
-    },
-  ],
-  variable: "--font-PopReg",
-});
 
 export const metadata: Metadata = {
   title: "MJ | Portfolio",
@@ -39,7 +15,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${PopBold.variable} ${PopReg.variable}`}>
+      <head>
+        {/* Preconnect to Google Fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        {/* Link to Poppins font */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="overflow-x-hidden">
         {children}
         <StarsCanvas />
       </body>

@@ -23,7 +23,7 @@ export default function Home() {
       {loading ? (
         <Loader />
       ) : (
-        <div className="bg-[#030014] ">
+        <div className="bg-[#030014] overflow-x-hidden ">
           <Navbar />
           <Hero />
           <About />

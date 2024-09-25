@@ -20,8 +20,9 @@ const About = () => {
           <div
             className="flex flex-col items-start justify-center w-full mb-10 "
             data-aos="zoom-in"
+            data-aos-duration="1000"
           >
-            <h1 className=" border-4 py-3 px-4 border-indigo-600 text-3xl lg:text-6xl font-PopBold mt-20 md:mt-20  text-white">
+            <h1 className=" border-4 py-3 px-4 border-indigo-600 text-3xl lg:text-6xl font-poppins font-extrabold mt-20 md:mt-20  text-white">
               About Me
             </h1>
           </div>
@@ -29,8 +30,9 @@ const About = () => {
             <div
               className="md:col-span-2 paragraph mb-10 text-lg text-white"
               data-aos="fade-right"
+              data-aos-duration="1000"
             >
-              <p className="mb-3 font-PopReg opacity: 1; transform: none;">
+              <p className="mb-3 text-gray-400 font-poppins opacity: 1; transform: none;">
                 I am <span className="font-bold">MJ</span>, Passionate and
                 forward-thinking web developer dedicated to staying at the
                 forefront of technology trends. Committed to continuous
@@ -41,9 +43,10 @@ const About = () => {
             <div
               className="sm:min-w-[250px]  flex flex-col p-3   "
               data-aos="fade-left"
+              data-aos-duration="1000"
             >
               <div className="flex flex-row items-start mb-1 text-white ml-1 ">
-                <h3 className="font-bold text-lg">What I use</h3>
+                <h3 className="font-bold font-poppins text-lg">What I use</h3>
               </div>
               <div className="flex flex-wrap text-sm">
                 <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium   rounded-2xl bg-orange-400">
@@ -272,7 +275,7 @@ const About = () => {
 
               <div className="relative w-fit h-fit overflow-y-clip">
                 <div className="flex flex-row items-start mb-2 ml-1">
-                  <h3 className="font-bold text-white text-lg">
+                  <h3 className="font-bold font-poppins text-white text-lg">
                     What I have learned
                   </h3>
                 </div>

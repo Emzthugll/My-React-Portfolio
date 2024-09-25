@@ -26,8 +26,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        PopBold: ["var(--font-PopBold)"],
-        PopReg: ["var(--font-PopReg)"],
+        poppins: ["Poppins", "sans-serif"],
       },
 
       screens: {

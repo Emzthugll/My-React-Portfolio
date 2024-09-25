@@ -74,11 +74,15 @@ const Projects = () => {
       className="h-full w-full bg-[#030014] relative flex items-center justify-center "
     >
       <div className="container max-w-[1100px] mx-auto py-10  z-30">
-        <div className="text-end    mt-10" data-aos="zoom-in">
-          <p className="text-gray-400 font-PopReg text-xl lg:text-2xl px-5">
+        <div
+          className="text-end    mt-10"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <p className="text-gray-400 font-poppins text-xl lg:text-2xl px-5">
             MY WORKS
           </p>
-          <h1 className="text-3xl lg:text-6xl font-PopBold mt-1 mb-4  px-4 py-2 inline-block border-4 border-indigo-500 text-white">
+          <h1 className="text-3xl lg:text-6xl font-poppins font-extrabold mt-1 mb-10  px-4 py-2 inline-block border-4 border-indigo-500 text-white">
             Projects
           </h1>
         </div>
@@ -89,6 +93,7 @@ const Projects = () => {
               key={index}
               className="flex flex-col md:flex-row items-center mb-8 p-4 bg-transparent rounded-lg w-full max-w-5xl bg-gradient-to-r from-purple-100 to-indigo-100 text-white transition-all duration-500 hover:shadow-[0_0_20px_#A020F0,0_0_30px_#4B0082] cursor-pointer z-30"
               data-aos="fade-right"
+              data-aos-duration="1000"
             >
               <div className="w-full md:w-1/2 mb-4 md:mb-0 overflow-hidden z-30">
                 <Image
@@ -99,11 +104,14 @@ const Projects = () => {
                   height={800}
                   className=" transition-transform duration-300 ease-in-out transform hover:scale-110 z-20"
                   data-aos="zoom-in-up"
+                  data-aos-duration="1000"
                 />
               </div>
               <div className="w-full md:w-1/2 md:pl-10">
-                <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
-                <p className="text-muted-foreground mb-4">
+                <h2 className="text-2xl font-poppins font-semibold mb-2">
+                  {project.title}
+                </h2>
+                <p className="text-gray-400 font-poppins mb-4">
                   {project.description}
                 </p>
                 <div className="flex items-center">
