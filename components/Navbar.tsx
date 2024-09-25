@@ -7,7 +7,6 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-import { ModeToggle } from "./modeToggle";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -72,18 +71,21 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg dark:bg-black dark:bg-opacity-70 z-20 transition-transform duration-300 ${
+      className={`fixed top-0 left-0 w-full bg-black bg-opacity-30 backdrop-filter backdrop-blur-lg shadow-xl shadow-[#2A0E61]/70  z-50 transition-transform duration-300 ${
         isNavbarVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-3 overflow-hidden">
+      <div
+        className="max-w-screen-xl flex items-center justify-between mx-auto p-3 overflow-hidden z-40"
+        data-aos="zoom-in"
+      >
         {/* Logo and Name */}
         <a
           href="#home"
           className="flex items-center space-x-3 rtl:space-x-reverse ml-4"
           onClick={closeNav}
         >
-          <span className="text-2xl   font-semibold whitespace-nowrap ">
+          <span className="text-2xl text-white  font-semibold whitespace-nowrap ">
             M <span className="text-blue-600 font-bold">J</span>
           </span>
         </a>
@@ -94,7 +96,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#hero"
-                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600"
+                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600 text-white hover:text-black"
               >
                 Home
               </a>
@@ -102,7 +104,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#about"
-                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600"
+                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600 text-white hover:text-black"
               >
                 About
               </a>
@@ -110,7 +112,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#projects"
-                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600"
+                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600 text-white hover:text-black"
               >
                 Projects
               </a>
@@ -118,7 +120,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600"
+                className="py-2 px-3 rounded transition duration-200 ease-in-out hover:bg-blue-600 text-white hover:text-black"
               >
                 Contact
               </a>
@@ -129,7 +131,7 @@ const Navbar = () => {
         {/* Toggle Button and Icons */}
         <div className="flex items-center space-x-4">
           {/* LinkedIn and GitHub Icons */}
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex text-white space-x-4">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -144,12 +146,19 @@ const Navbar = () => {
             >
               <FaGithub className="h-6 w-5" />
             </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/your-profile"
+            >
+              <FaInstagram className="h-6 w-5" />
+            </a>
           </div>
-          <ModeToggle />
+
           {/* Toggle Button */}
           <button
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded={isNavOpen}
             onClick={toggleNav}
@@ -159,7 +168,7 @@ const Navbar = () => {
               className="w-5 h-5"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
-              fill="none"
+              fill="#fffff"
               viewBox="0 0 17 14"
             >
               <path
@@ -176,7 +185,7 @@ const Navbar = () => {
 
       {/* Sidebar Menu (Toggle Menu) */}
       <div
-        className={`fixed z-50 top-0 right-0 h-screen w-full bg-white dark:bg-black transform overflow-hidden ${
+        className={`fixed z-50 top-0 right-0 h-screen w-full bg-[#030014]  transform overflow-hidden ${
           isNavOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
         id="navbar-default"
@@ -197,7 +206,7 @@ const Navbar = () => {
             <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
           </svg>
         </button>
-        <ul className="font-medium h-full flex flex-col p-4 mt-10 rounded-lg">
+        <ul className="font-medium text-gray-500 h-full flex flex-col p-4 mt-10 rounded-lg">
           <li>
             <a
               href="#hero"

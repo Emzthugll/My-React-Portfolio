@@ -31,29 +31,32 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="h-full w-full dark:bg-black bg-white dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] relative flex items-center justify-center">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+    <div className="h-full w-full bg-[#030014] relative flex items-center justify-center">
       <div
         id="contact"
         className="min-h-screen py-8 sm:py-16 px-4 sm:px-8 z-10"
       >
-        <div className="flex flex-col items-center justify-center w-full mb-10">
+        <div
+          className="flex flex-col items-center justify-center w-full mb-10"
+          data-aos="zoom-in"
+        >
           <h1
-            className="text-3xl lg:text-4xl  text-black font-bold mt-9 md:mt-5 md:mb-6 sm:text-5xl rounded-full px-4 py-2 inline-block bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
+            className="text-3xl lg:text-4xl   font-bold mt-9 md:mt-5 md:mb-6 sm:text-5xl rounded-full px-4 py-2 inline-block bg-gradient-to-r from-purple-400 to-indigo-400 text-white"
             style={{ boxShadow: "0 4px 6px rgb(75, 0, 130)" }}
           >
             Contact
           </h1>
         </div>
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-14 rounded-lg p-6 sm:p-8 mx-auto max-w-6xl font-[sans-serif] w-full border border-gray-200 dark:border-gray-500  bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-14 rounded-lg p-6 sm:p-8 mx-auto max-w-6xl font-[sans-serif] w-full border border-gray-200 dark:border-gray-500  bg-gradient-to-r from-purple-400 to-indigo-400 text-white"
           style={{ boxShadow: " 0 4px 6px rgb(0,0,255,0.6)" }}
+          data-aos="zoom-in-up"
         >
           <div>
-            <h1 className="text-black-100 dark:text-white text-3xl font-extrabold mb-4">
+            <h1 className="text-white text-3xl font-extrabold mb-4">
               Let&#39;s Talk
             </h1>
-            <p className="text-sm dark:text-white mb-6">
+            <p className="text-sm text-white mb-6">
               I&#39;d love to hear from you&apos; Whether you need help with
               development, design, or just want to brainstorm, feel free to
               reach out. Let&#39;s turn your vision into reality together&apos;
@@ -71,26 +74,26 @@ const Contact: React.FC = () => {
                 <input
                   type="text"
                   name="first_name"
-                  className=" border dark:bg-gray-700 rounded-lg px-4 py-2    w-full max-w-5xl"
+                  className=" border bg-gray-700 rounded-lg px-4 py-2    w-full max-w-5xl"
                   placeholder="First Name"
                   required
                 />
               </div>
-              <div className=" rounded-lg transition-all duration-500 hover:shadow-[0_0_5px_#A020F0,0_0_10px_#4B0082]  dark:hover:shadow-[0_0_10px_#A020F0,0_0_10px_#4B0082]">
+              <div className=" rounded-lg transition-all duration-500 hover:shadow-[0_0_10px_#A020F0,0_0_10px_#4B0082]">
                 <input
                   type="text"
                   name="last_name"
-                  className="border dark:bg-gray-700 rounded-lg px-4 py-2    w-full max-w-5xl"
+                  className="border bg-gray-700 rounded-lg px-4 py-2    w-full max-w-5xl"
                   placeholder="Last Name"
                   required
                 />
               </div>
             </div>
-            <div className="rounded-lg transition-all duration-500 hover:shadow-[0_0_5px_#A020F0,0_0_10px_#4B0082]  dark:hover:shadow-[0_0_10px_#A020F0,0_0_10px_#4B0082]">
+            <div className="rounded-lg transition-all duration-500 hover:shadow-[0_0_10px_#A020F0,0_0_10px_#4B0082]">
               <input
                 type="email"
                 name="email"
-                className=" border dark:bg-gray-700  rounded-lg px-4 py-2 w-full max-w-5x"
+                className=" border bg-gray-700  rounded-lg px-4 py-2 w-full max-w-5x"
                 placeholder="Your Email Address"
                 required
               />
@@ -99,7 +102,7 @@ const Contact: React.FC = () => {
             <textarea
               name="message"
               rows={4}
-              className="border dark:bg-gray-700  rounded-lg px-4 py-2 mt-2 w-full max-w-5xl"
+              className="border bg-gray-700  rounded-lg px-4 py-2 mt-2 w-full max-w-5xl"
               placeholder="Your Message"
               required
             ></textarea>
@@ -114,7 +117,7 @@ const Contact: React.FC = () => {
               />
               <label
                 htmlFor="privacy_policy"
-                className="ml-2 text-sm text-gray-500 dark:text-gray-400"
+                className="ml-2 text-sm text-gray-400 "
               >
                 I agree to the{" "}
                 <a

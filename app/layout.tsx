@@ -1,9 +1,31 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localfont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "./provider";
+
+import StarsCanvas from "@/components/StarBackground";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const PopBold = localfont({
+  src: [
+    {
+      path: "../public/fonts/PopBold.ttf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-PopBold",
+});
+
+const PopReg = localfont({
+  src: [
+    {
+      path: "../public/fonts/PopReg.ttf",
+      weight: "100, 400, 700",
+    },
+  ],
+  variable: "--font-PopReg",
+});
 
 export const metadata: Metadata = {
   title: "MJ | Portfolio",
@@ -17,15 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+      <body className={`${PopBold.variable} ${PopReg.variable}`}>
+        {children}
+        <StarsCanvas />
       </body>
     </html>
   );
