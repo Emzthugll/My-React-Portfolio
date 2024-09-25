@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
@@ -6,23 +7,23 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
-import Loader from "@/components/ui/Loader"; // Import the Loader component
+import Loader from "@/components/ui/Loader";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000);
+    const timer = setTimeout(() => setLoading(false), 1000); // Simulates loading time
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <main className="font-ui">
+    <main>
       {loading ? (
         <Loader />
       ) : (
-        <div>
+        <div className="bg-[#030014] ">
           <Navbar />
           <Hero />
           <About />

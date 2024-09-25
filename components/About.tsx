@@ -14,61 +14,35 @@ import C from "@/components/assets/Csharp.png";
 
 const About = () => {
   return (
-    <section id="about" className="   dark:bg-[#0d1727] ">
-      <div className="h-full w-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] relative flex items-center justify-center z-0">
-        {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <div className="w-full  max-w-[1200px] mx-auto px-4 text-text dark:text-darkText z-50">
+    <section id="about" className=" bg-[#030014] ">
+      <div className="h-full w-full mx-auto px-4 relative flex items-center justify-center z-0">
+        <div className="w-full  max-w-[1200px] mx-auto  text-text dark:text-darkText z-50">
           <div
-            className="flex flex-col items-center justify-center w-full mb-10 "
+            className="flex flex-col items-start justify-center w-full mb-10 "
             data-aos="zoom-in"
           >
-            <h1
-              className=" text-3xl lg:text-4xl font-bold mt-20 md:mt-20 rounded-full px-4 py-2 inline-block bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
-              style={{ boxShadow: "0 4px 6px rgb(75, 0, 130)" }}
-            >
+            <h1 className=" border-4 py-3 px-4 border-indigo-600 text-3xl lg:text-6xl font-PopBold mt-20 md:mt-20  text-white">
               About Me
             </h1>
           </div>
           <div className="grid md:grid-cols-3   md:gap-10  justify-center items-start">
             <div
-              className="md:col-span-2 paragraph mb-10 text-lg"
+              className="md:col-span-2 paragraph mb-10 text-lg text-white"
               data-aos="fade-right"
             >
-              <p className="mb-3 opacity: 1; transform: none;">
-                I am <span className="font-bold">MJ</span>, a Computer
-                Engineering graduate from Mariano Marcos State University with a
-                deep passion for web development. My coding journey began in
-                college, where I played a key role in developing an Early Flood
-                Detection and Monitoring System using MQTT Protocol.
-              </p>
-              <p className="mb-3">
-                I have experience with front-end development tools and
-                technologies. I am comfortable working with HTML, CSS, and
-                JavaScript to create responsive and user-friendly web
-                interfaces. My experience also includes using modern frameworks
-                like React and styling tools such as Tailwind CSS. I am keen on
-                applying these skills to develop engaging web applications and
-                continually improving my knowledge in front-end development.
-              </p>
-              <p className="mb-3">
-                Alongside my core technical skills,During my college years, I
-                gained proficiency in several programming languages and
-                technologies, including Python, C++, MATLAB, Java, and AWS. This
-                diverse skill set has equipped me with a solid understanding of
-                various programming paradigms and development tools.
-              </p>
-              <p>
-                I am eager to explore new opportunities and connect with
-                professionals who see a potential fit for my skills and
-                enthusiasm. Let’s connect and discuss how we can work together!
+              <p className="mb-3 font-PopReg opacity: 1; transform: none;">
+                I am <span className="font-bold">MJ</span>, Passionate and
+                forward-thinking web developer dedicated to staying at the
+                forefront of technology trends. Committed to continuous
+                learning, eagerly explore new frameworks, libraries, and tools
+                to enhance my skill set and deliver innovative solutions.
               </p>
             </div>
             <div
               className="sm:min-w-[250px]  flex flex-col p-3   "
               data-aos="fade-left"
             >
-              <div className="flex flex-row items-start mb-1 ml-1 ">
+              <div className="flex flex-row items-start mb-1 text-white ml-1 ">
                 <h3 className="font-bold text-lg">What I use</h3>
               </div>
               <div className="flex flex-wrap text-sm">
@@ -298,7 +272,9 @@ const About = () => {
 
               <div className="relative w-fit h-fit overflow-y-clip">
                 <div className="flex flex-row items-start mb-2 ml-1">
-                  <h3 className="font-bold text-lg">What I have learned</h3>
+                  <h3 className="font-bold text-white text-lg">
+                    What I have learned
+                  </h3>
                 </div>
                 <div className="flex flex-wrap text-sm">
                   <p className="px-3 py-1 my-2 mr-2 flex items-center justify-center font-medium  rounded-2xl bg-orange-200  ">
