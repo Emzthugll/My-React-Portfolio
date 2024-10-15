@@ -55,7 +55,7 @@ const Technologies = () => {
 
         <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l z-40 from-[#030014]"></div>
 
-        <Marquee direction="right" speed={120} delay={5} pauseOnHover>
+        <Marquee direction="right" speed={125} delay={5} pauseOnHover>
           {technologies.map(({ src, label, bg }, index) => (
             <div
               className={`image_wrapper cursor-pointer mx-2 relative group ${
