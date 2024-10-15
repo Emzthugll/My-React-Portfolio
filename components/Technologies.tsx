@@ -11,7 +11,7 @@ import Sql from "@/components/assets/sql.png";
 import MongoDB from "@/components/assets/mongo.png";
 import Git from "@/components/assets/git.png";
 import Github from "@/components/assets/github.png";
-import Aws from "@/components/assets/aws.png";
+import Aws from "@/components/assets/Aws.png";
 import Figma from "@/components/assets/figma.png";
 import Typescript from "@/components/assets/typescript.png";
 import Bootstrap from "@/components/assets/bootstrap.png";
