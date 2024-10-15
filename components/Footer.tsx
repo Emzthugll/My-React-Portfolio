@@ -5,10 +5,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 border-t border-gray-400 z-10 relative">
       {" "}
-      {/* Ensure relative positioning */}
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 dark:text-gray-400 text-center sm:text-left">
+          <span className="text-sm text-gray-500  text-center sm:text-left">
             &copy;{" "}
             <a href="/" className="hover:underline">
               MJGACULA

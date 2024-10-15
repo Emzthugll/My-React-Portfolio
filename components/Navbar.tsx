@@ -193,7 +193,7 @@ const Navbar = () => {
       >
         <button
           type="button"
-          className="absolute top-4 right-4 p-2 text-blue-600 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="absolute top-4 right-4 p-2 text-blue-600 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
           onClick={toggleNav}
           aria-label="Close menu"
         >
@@ -207,7 +207,7 @@ const Navbar = () => {
             <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
           </svg>
         </button>
-        <ul className="font-medium text-gray-500 h-full flex flex-col p-4 mt-10 rounded-lg">
+        <ul className="font-medium text-gray-200 h-full flex flex-col p-4 mt-10 rounded-lg">
           <li>
             <a
               href="#hero"

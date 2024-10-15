@@ -1,4 +1,3 @@
-// components/PrivacyPolicyModal.tsx
 import React, { useEffect } from "react";
 
 interface PrivacyPolicyModalProps {
@@ -11,7 +10,6 @@ const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({
   onClose,
 }) => {
   useEffect(() => {
-    // Toggle the body scroll class based on modal state
     if (isOpen) {
       document.body.classList.add("no-scroll");
     } else {
@@ -23,14 +21,13 @@ const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
-      <div className="bg-white dark:bg-gray-800 p-10 rounded-md shadow-lg max-w-6xl  w-full mx-auto relative">
+      <div className="bg-gray-600 text-white  p-10 rounded-md shadow-lg max-w-6xl  w-full mx-auto relative">
         <h2 className="text-2xl font-bold mb-4">Privacy Policy</h2>
         <div className="border-b-2 border-gray-300 mb-4"></div>
         <div
           className="prose dark:prose-invert overflow-y-auto my-4"
           style={{ maxHeight: "55vh" }}
         >
-          {/* Your Privacy Policy content here */}
           <p>
             This Privacy Policy outlines how we collect, use, and protect your
             information when you interact with Mj Gacula&#39;s portfolio

@@ -8,6 +8,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Loader from "@/components/ui/Loader";
+import Technologies from "@/components/Technologies";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ export default function Home() {
           <Navbar />
           <Hero />
           <About />
+          <Technologies />
           <Projects />
           <Contact />
           <Footer />

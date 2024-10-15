@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
     <div className=" w-full bg-[#030014] relative flex items-center justify-center">
       <div id="contact" className=" h-[80%] py-8 sm:py-16 px-4 sm:px-8 z-10">
         <div
-          className="flex flex-col items-start justify-center w-full mb-10"
+          className="flex flex-col items-end justify-center w-full mb-10"
           data-aos="zoom-in"
           data-aos-duration="500"
         >

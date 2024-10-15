@@ -38,7 +38,7 @@ const projects = [
     description:
       "My portfolio showcases a range of projects that highlight my skills in crafting intuitive, responsive websites and applications. Each project demonstrates my commitment to quality, attention to detail, and creativity. Feel free to explore and see how I bring concepts to life with cutting-edge technologies and thoughtful design.",
     imageUrl: Fifth,
-    link: "https://main--mj-react-portfolio.netlify.app/",
+    link: "https://mjgacula.netlify.app/",
     icons: <PortfolioIcons />, // Unique icons for this project
   },
   {
@@ -75,7 +75,7 @@ const Projects = () => {
     >
       <div className="container max-w-[1100px] mx-auto py-10  z-30">
         <div
-          className="text-end    mt-10"
+          className="text-start    mt-10"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >

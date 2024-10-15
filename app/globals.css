@@ -162,3 +162,8 @@ html {
 .zoom-container:hover .zoom-image {
   transform: scale(1.1); /* Zoom effect */
 }
+
+.tooltip {
+  transition: opacity 0.3s ease;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
