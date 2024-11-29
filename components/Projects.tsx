@@ -76,7 +76,7 @@ const Projects = () => {
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="container mx-auto py-10  z-50">
-        <div className="text-center mt-5">
+        <div className="text-center mt-5" data-aos="zoom-in">
           <h1
             className="text-3xl lg:text-4xl font-bold mt-5  mb-4 rounded-full px-4 py-2 inline-block bg-gradient-to-r from-purple-400 to-indigo-400 dark:text-white"
             style={{ boxShadow: "0 4px 6px rgb(75, 0, 130)" }}
@@ -84,7 +84,10 @@ const Projects = () => {
             Projects
           </h1>
         </div>
-        <p className="text-center text-md text-muted-foreground mb-10">
+        <p
+          className="text-center text-md text-muted-foreground mb-10"
+          data-aos="zoom-in"
+        >
           Here you will find some of the personal and client projects that I
           created.
         </p>
@@ -93,6 +96,7 @@ const Projects = () => {
             <div
               key={index}
               className="flex flex-col md:flex-row items-center mb-8 p-4 bg-transparent rounded-lg w-full max-w-5xl border bg-gradient-to-r from-purple-100 to-indigo-100 dark:text-white transition-all duration-500 hover:shadow-[0_0_20px_#A020F0,0_0_30px_#4B0082] cursor-pointer"
+              data-aos="fade-right"
             >
               <div className="w-full md:w-1/2 mb-4 md:mb-0 overflow-hidden">
                 <Image
@@ -101,7 +105,8 @@ const Projects = () => {
                   layout="responsive"
                   width={1200}
                   height={800}
-                  className="rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-110"
+                  className=" transition-transform duration-300 ease-in-out transform hover:scale-110"
+                  data-aos="zoom-in-up"
                 />
               </div>
               <div className="w-full md:w-1/2 md:pl-10">
