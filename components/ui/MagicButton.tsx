@@ -13,11 +13,11 @@ const MagicButton: React.FC<MagicButtonProps> = ({ resumeLink }) => {
   return (
     <button
       onClick={handleClick}
-      className="relative inline-flex h-12 active:scale-95 transition overflow-hidden rounded-full p-[4px] focus:outline-none"
+      className="relative inline-flex h-12 active:scale-95 transition overflow-hidden rounded-lg p-[4px] focus:outline-none"
     >
-      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
-      <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white dark:bg-gray-950 px-7 text-sm font-medium dark:text-white backdrop-blur-3xl gap-2 undefined">
-        Show Resume
+      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#7207f5_50%,#d60f0f_50%,#ac0af7_100%)]"></span>
+      <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-sm bg-transparent px-7 text-md text-white font-bold   backdrop-blur-3xl gap-2 undefined">
+        Show My Resume
         <svg
           stroke="currentColor"
           fill="currentColor"
