@@ -270,7 +270,7 @@ const Navbar = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/your-profile"
+                href="https://github.com/Emzthugll"
               >
                 <FaGithub className="h-6 w-5" />
               </a>
