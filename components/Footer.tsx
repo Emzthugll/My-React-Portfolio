@@ -22,7 +22,11 @@ const Footer = () => {
             >
               <FaFacebookSquare className="h-7 w-6 fill-gray-300 hover:fill-blue-500" />
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="#">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Emzthugll"
+            >
               <FaGithub className="h-6 w-6 fill-gray-300 hover:fill-black" />
             </a>
             <a

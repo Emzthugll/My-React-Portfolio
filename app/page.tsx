@@ -1,3 +1,4 @@
+// app/page.tsx
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -14,7 +15,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000); // Simulates loading time
+    const timer = setTimeout(() => setLoading(false), 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -24,7 +25,7 @@ export default function Home() {
       {loading ? (
         <Loader />
       ) : (
-        <div className="bg-[#030014] overflow-x-hidden ">
+        <div className="bg-[#030014] overflow-x-hidden">
           <Navbar />
           <Hero />
           <About />
